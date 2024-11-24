@@ -7,11 +7,26 @@
   {
     "icon": "Cloud",
     "name": "网盘",
-    "link": "https://wp.sty20030818.space/"
+    "link": "https://pan.sty20030818.space/"
+  },
+  {
+    "icon": "StickyNoteRegular",
+    "name": "备忘录",
+    "link": "https://note.sty20030818.space/"
+  },
+  {
+    "icon": "ShareSquareRegular",
+    "name": "分享",
+    "link": "https://share.sty20030818.space/"
+  },
+  {
+    "icon": "BookmarkRegular",
+    "name": "收藏夹",
+    "link": "https://book.sty20030818.space/"
   },
   {
     "icon": "CompactDisc",
     "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "link": "https://music.sty20030818.space/"
   }
 ]
