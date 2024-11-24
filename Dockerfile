@@ -15,7 +15,7 @@ RUN npm run build
 FROM node:18-alpine
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
-RUN cnpm install -g http-server
+RUN npm install -g cnpm && cnpm install -g http-server
 
 EXPOSE 12445
 CMD ["http-server", "dist", "-p", "12445"]
