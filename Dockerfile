@@ -15,7 +15,11 @@ RUN npm run build
 FROM node:18-alpine
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
-RUN npm install -g cnpm && cnpm install -g http-server
+RUN npm config set registry https://registry.npm.taobao.org
+RUN npm cache clean --force
+RUN npm config set strict-ssl false
+RUN npm install -g cnpm
+RUN cnpm install -g http-server
 
 EXPOSE 12445
 CMD ["http-server", "dist", "-p", "12445"]
